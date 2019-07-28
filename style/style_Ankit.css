@@ -1,0 +1,325 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background: url('../images/bg.svg') no-repeat #fff top -150px right 120%;
+    background-size: 150% 150%;
+    border-right: 5px solid #00a651;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    border: none;
+    outline: none;
+}
+a {
+    color: #00aeef;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 2em;
+    line-height: 1.7em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.3em;
+    color: #333;
+    letter-spacing: -.01em;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.857em;
+    margin-bottom: 1.25em;
+}
+
+h2 {
+    font-size: 2.857em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.929em;
+    font-weight: 300;
+    margin-bottom: .3em;
+}
+
+h4 {
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+h5 {
+    font-size: 1.143em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*header*/
+
+.nav-link {
+    padding: 0 5px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+}
+
+.nav-item a.nav-link:before {
+    content: '.';
+    margin-right: 15px;
+}
+
+.nav-item:first-child a:before {
+    content: none;
+}
+
+/* Ankit Code */
+
+*{    box-sizing: border-box;}
+.photo{
+    /* background: teal; */
+    height:100%;
+    width:100%;
+    background: url('../images/register_Shubhada.svg') no-repeat right top;
+    background-size: 40% 100%;
+}
+
+.LeftFormContent{
+    float:left;
+    padding-left: 60px;
+    width: 50%;
+    margin-top: 70px;
+}
+.LeftForm{width:100%;}
+.LeftFormFirstPara{font-size: 32px; margin-bottom: 10px;font-weight:lighter;}
+.LeftFormSecondPara{font-weight: bold;  font-size: 22px;}
+.LeftFormInput{margin-top: 30px;}
+.LeftFormInput input{
+    width:100%; 
+    margin: 30px 0px;
+    border: none;
+    border-bottom: 2px solid #e2e2e2;
+    padding-left: 35px;
+    border-radius:0px;
+}
+.LeftFormInput .IconUsername:focus, .LeftFormInput .IconEmail:focus, .LeftFormInput .IconMobile:focus, .LeftFormInput .IconCity:focus, .LeftFormInput .Iconhelp:focus { 
+    
+    box-shadow: none;
+    outline: none; 
+}
+.buttonSubmit:focus, .faqsBtnClick:focus{outline:none}
+.faqsBtnClick:hover{cursor: pointer;}
+.IconUsername+span, .IconEmail+span, .IconMobile+span, .IconCity+span, .Iconhelp+span{position:absolute; font-size:20px;top: 6px;color:#6d6e71}
+.IconUsername:focus+span, .IconEmail:focus+span, .IconMobile:focus+span, .IconCity:focus+span, .Iconhelp:focus+span{color:#0e75bc;transition: all 0.3s}
+.faqsBtnClick span{font-size:15px;    margin-right: 10px;}
+
+.IconUsername::placeholder, .IconEmail::placeholder, .IconMobile::placeholder, .IconCity::placeholder, .Iconhelp::placeholder{color:#c4c4c3}
+.Iconhelp:-ms-input-placeholder {color:#c4c4c3}
+
+.buttonSubmit{
+    color: #0e75bc;
+    border: 2px solid #39b068;
+    border-radius: 30px;
+    padding: 8px 30px;
+    font-size: 15px;
+    background-color: transparent;
+    margin-top: 30px;
+  
+}
+.buttonSubmit:hover{background-color:#39b068; color:white;transition:all 0.3s;  cursor: pointer;}
+.faqsDiv{
+    position: absolute;
+    right: -400px;
+    top: 0px;
+    width: 400px;
+    height:100%;
+    padding:0px 30px;
+    transition: all 0.3s;
+    background: url('../images/faq.svg')   #39b068 no-repeat left 82px top 12px;
+}
+.faqDiv{margin-top: 54%; color:white;}
+
+.faqsBtnClick{
+    padding:10px 13px;
+    background:  #39b068;
+    position: absolute;
+    left: -105px;
+    top: 40%;
+    border-radius: 30px 0px 0px 30px;
+    color:white;
+    border: none;
+    font-size:20px;
+}
+.faqsDiv.aa {
+    right: 0;
+}
+.faqDiv div{margin-bottom: 26px}
+.faqDiv div p{margin-bottom:0px;}
+.pp{margin-top:20px}
+
+.RchatDiv{display:none;}
+.RchatBtnClick{display: none;}
+.chatDiv{
+    position: absolute;
+    right: 0px;
+    bottom: 0%;
+    width: 300px;
+    height:0%;
+   
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+.chatTopDiv{
+    background-color: #0095da;
+    color:#f6f6f7;
+    height:50%;
+}
+.chatTopDivAddedClass{padding: 30px;}
+.chatTopDivContent{display:none;}
+.chatTopDivContentAddedClass{
+    display: block;
+    color: #f6f6f7;
+    padding: 75px 30px;
+    text-align: center;
+}
+.chatTopDivContentBottom{font-size:14px }
+.chatTopDivContentTop{font-size:20px }
+.chatBottomDiv{
+    background-color: #f6f6f7;
+    height:50%;  
+}
+.chatBottomDivMessage{
+    width:100%;
+    background-color:#fff;
+    height: 40px;
+    position: absolute;
+    bottom:0px;
+}
+.MessageSmiley{
+    font-size: 24px;
+    margin-left: 6px;
+    color: #6d6e71;
+}
+.MessageInput{
+    position: absolute;
+    bottom: 7px;
+    border: none;
+    margin-left: 22px;
+    width: 70%;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.MessageInputINN:focus{
+    outline:none;
+    box-shadow: none;
+}
+.MessageInputINN{width:100%;    border:none;}
+.MessageAttach{
+    float: right;
+    padding-top: 8px;
+    color: #6d6e71;
+    transform: rotate(40deg);
+}
+.chatBtnClick{
+    cursor: pointer;
+    padding: 12px;
+    color:#f6f6f7;
+    background: #0095da;
+    position: absolute;
+    right: 0%;
+    top: 93%;
+    width: 300px;
+    margin-right: 20px;
+    border: none;
+    transition: all 0.3s;
+    font-size: 17px;
+}
+.chatBtnClick:focus{outline:none;}
+.arrowDown{
+    color: #f6f6f7;
+    float: right;
+    padding-top: 5px;
+}
+.chatDiv.bb {
+    height:50%;  
+}
+.chatBtnClick.bbClick{
+    color: transparent;
+    top: 48%;
+}
+
+/* Media query Popup box */
+
+@media screen and (max-width:767px)
+{
+    .photo{ background-size: 0%}
+    .LeftFormContent
+    {
+        width:100%;
+        margin-top: 0px;
+        padding-left: 0px
+    }
+    .LeftForm{padding: 0px 127px;}
+    .LeftFormInput{width:100%}
+} 
+@media screen and (max-width:600px)
+{
+.LeftForm{padding: 0px 62px;}
+.LeftFormInput{width:100%} 
+
+}
+@media screen and (max-width:480px){
+    .LeftFormInput{width:80%}
+    .LeftForm{padding:0px 0px}
+}
